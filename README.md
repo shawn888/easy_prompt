@@ -77,15 +77,3 @@ Easy Prompt是一个简洁美观的个人AI提示词收藏与分享平台，帮�
   count: 2  // 该分类下的提示词数量
 }
 ```
-
-## Vercel部署
-
-该项目可以轻松部署到Vercel平台：
-
-1. 在[Vercel](https://vercel.com)上创建账号
-2. 导入Git仓库
-3. 点击部署按钮
-
-## 许可证
-
-MIT 
