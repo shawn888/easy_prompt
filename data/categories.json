@@ -1,0 +1,50 @@
+[
+  {
+    "name": "图像生成",
+    "slug": "image-generation",
+    "description": "用于AI图像生成工具的提示词，如Midjourney、DALL-E、Stable Diffusion等",
+    "icon": "🖼️"
+  },
+  {
+    "name": "写作辅助",
+    "slug": "writing",
+    "description": "辅助各类写作任务的提示词，包括创意写作、学术写作、内容营销等",
+    "icon": "✍️"
+  },
+  {
+    "name": "编程开发",
+    "slug": "programming",
+    "description": "辅助编程和软件开发的提示词，包括代码生成、调试、文档撰写等",
+    "icon": "💻"
+  },
+  {
+    "name": "职业发展",
+    "slug": "career",
+    "description": "关于职业规划、求职面试、职场沟通等方面的提示词",
+    "icon": "👔"
+  },
+  {
+    "name": "生产力",
+    "slug": "productivity",
+    "description": "提高个人和团队生产力的提示词，包括时间管理、任务规划等",
+    "icon": "⏱️"
+  },
+  {
+    "name": "教育学习",
+    "slug": "education",
+    "description": "辅助学习和教育的提示词，如知识梳理、学习方法、教学设计等",
+    "icon": "📚"
+  },
+  {
+    "name": "内容创作",
+    "slug": "content-creation",
+    "description": "用于创建各类内容的提示词，如视频脚本、播客内容、社交媒体等",
+    "icon": "🎬"
+  },
+  {
+    "name": "数据分析",
+    "slug": "data-analysis",
+    "description": "辅助数据处理和分析的提示词，包括数据解读、可视化指导等",
+    "icon": "📊"
+  }
+] 
