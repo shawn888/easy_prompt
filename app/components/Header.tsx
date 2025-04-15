@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 
@@ -15,8 +16,15 @@ export default function Header() {
     <header className="bg-white shadow-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-primary-600">
-            Easy Prompt
+          <Link href="/" className="flex items-center">
+            <Image 
+              src="/images/logo.png" 
+              alt="Easy Prompt Logo" 
+              width={180} 
+              height={60} 
+              className="h-auto" 
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
