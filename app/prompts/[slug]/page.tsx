@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { getPromptBySlug, getCategoryBySlug } from '../../lib/api'
 import CopyButton from '../../components/CopyButton'
 import ShareButton from '../../components/ShareButton'
+import ReactMarkdown from 'react-markdown'
 
 interface PromptPageProps {
   params: {
@@ -56,21 +57,18 @@ export default async function PromptPage({ params }: PromptPageProps) {
       
       <div className="bg-gray-50 p-6 rounded-lg mb-8">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold">提示词内容</h2>
+          <h2 className="text-xl font-bold mb-4">使用说明</h2>
           <div className="flex space-x-2">
-            <CopyButton text={prompt.content} />
-            <ShareButton title={prompt.title} url={`/prompts/${prompt.slug}`} />
+              <CopyButton text={prompt.content} />
+              <ShareButton title={prompt.title} url={`/prompts/${prompt.slug}`} />
           </div>
         </div>
-        <div className="bg-white p-4 rounded-md border border-gray-200 whitespace-pre-wrap">
-          {prompt.content}
-        </div>
-      </div>
-      
-      <div className="bg-white p-6 rounded-lg shadow-sm">
-        <h2 className="text-xl font-bold mb-4">使用说明</h2>
-        <div className="prose max-w-none">
-          {prompt.content}
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <div className="prose prose-blue prose-lg max-w-none markdown-content">
+            <ReactMarkdown>
+              {prompt.content}
+            </ReactMarkdown>
+          </div>
         </div>
       </div>
     </div>
